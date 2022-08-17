@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity">
+
+      <TextView
+          android:id="@+id/text_judul"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Selamat Datang"
+          android:textColor="@color/black"
+          android:textSize="29dp"
+          android:fontFamily="@font/poppins_semibold"
+          android:layout_marginTop="60dp"
+          app:layout_constraintTop_toTopOf="parent"
+          android:gravity="center" />
+
+      <TextView
+          android:id="@+id/text_user"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="User"
+          android:textColor="@color/black"
+          android:textSize="29dp"
+          android:fontFamily="@font/poppins_semibold"
+          app:layout_constraintTop_toBottomOf="@+id/text_judul"
+          android:gravity="center"/>
+
+      <ImageView
+          android:id="@+id/logo_welcome"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="90dp"
+          android:background="@drawable/ic_logo_eticket"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/text_user"/>
+
+      <TextView
+          android:id="@+id/text_judul_aboutWelcome"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Cari tiket dengan mudah? di E-Ticket aja!!"
+          android:textColor="@color/black"
+          android:textSize="15dp"
+          android:fontFamily="@font/poppins_semibold"
+          android:gravity="center"
+          app:layout_constraintTop_toBottomOf="@+id/logo_welcome"
+          android:layout_marginTop="90dp"/>
+
+      <View
+          android:id="@+id/line_aboutWelcome"
+          android:layout_width="95dp"
+          android:layout_height="3dp"
+          android:layout_marginTop="10dp"
+          android:background="@color/blue"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/text_judul_aboutWelcome"/>
+
+      <TextView
+          android:id="@+id/text_aboutWelcome"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text= "E-Ticket adalah aplikasi pesan tiket online terpercaya di indonesia yang terkenal dengan harga nya yang terjangkau."
+          android:textColor="@color/black"
+          android:textSize="12dp"
+          android:fontFamily="@font/poppins"
+          android:layout_marginTop="25dp"
+          android:layout_marginRight="70dp"
+          android:layout_marginLeft="70dp"
+          android:gravity="center"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/line_aboutWelcome"/>
+
+
+    <Button
+        android:id="@+id/btn_masuk"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="112dp"
+        android:background="@drawable/btn_blue"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Mulai"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_aboutWelcome" />
+
+    <TextView
+          android:id="@+id/text_copyright"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/copyright"
+          android:textColor="@color/black"
+          android:textSize="12sp"
+          android:gravity="center"
+          app:layout_constraintBottom_toBottomOf="parent"
+          android:layout_marginBottom="20dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
